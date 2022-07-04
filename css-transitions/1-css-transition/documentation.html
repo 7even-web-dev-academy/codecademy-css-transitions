@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Transition</title>
+  </head>
+  <body>
+    <h1>CSS Transitions</h1>
+    <p>
+      After a website is displayed, the visual appearances of various elements
+      can change for many reasons. For example:
+    </p>
+    <ul>
+      <li>
+        Moving your mouse over a link may change the color or appearance of that
+        link.
+      </li>
+      <li>Changing the size of the window may change the layout.</li>
+      <li>Scrolling causes some elements to disappear and others to appear.</li>
+    </ul>
+    <p>With CSS transitions, we can control how these changes happen.</p>
+    <p>
+      These changes are a type of state change. CSS transitions allow us to
+      control the timing of visual state changes. We can control the following
+      four aspects of an element's transition:
+    </p>
+    <ul>
+      <li>Which CSS properties transition</li>
+      <li>How long a transition lasts</li>
+      <li>How much time there is before a transition begins</li>
+      <li>How a transition accelerates</li>
+    </ul>
+    <p>
+      We'll explore how different answers to each of these questions changes the
+      animation. If any of these sound confusing, don't worry! We will look at
+      examples of each and learn how to use them together for a visually
+      pleasing experience.
+    </p>
+
+    <h2>Intructions</h2>
+    <ol>
+      <li>
+        <div>
+          <p>
+            The web page in the browser contains a link styled as a button.
+          </p>
+          <p>
+            Currently, the background color abruptly changes from orange to green when you move your mouse over it. Let's make this transition smoother.
+          </p>
+          <p>
+            In style.css, find the rule for <a> elements, and add a declaration to transition the background-color property over a duration of two seconds. It should look like this:
+          </p>
+            <code>
+              a {
+                transition-property: background-color;
+                transition-duration: 2s;
+              }
+            </code>
+            <p>
+              Run the code, then hover over the links. What do you notice?
+            </p>
+          </div>
+      </li>
+    </ol>
+  </body>
+</html>

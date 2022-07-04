@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Combinations</title>
+  </head>
+  <body>
+    <h1>Combinationss</h1>
+    <p>
+      The shorthand transition rule has one advantage over the set of separate
+      transition-<property> rules: you can describe unique transitions for multiple
+      properties, and combine them.
+    </p>
+    <p>
+      To combine transitions, add a comma (,) before the semicolon (;) in your rule.
+      After the comma, use the same shorthand syntax. For example:
+    </p>
+    <pre>
+      <code>
+        transition: color 1s linear,
+        font-size 750ms ease-in 100ms;
+      </code>
+    </pre>
+    <p>
+      The above code transitions two properties at once. The text color transitions over
+      one second with linear timing and no delay. At the same time, the font size
+      transitions over 750 milliseconds with an ease-in timing and a 100 millisecond
+      delay. This “chaining” is a powerful tool for expressing complicated animations.
+    </p>
+    <h2>Intructions</h2>
+    <ol>
+      <li>
+        <div>
+          <p>
+            Let's try this with a deeper example. Note that some of the CSS used in this
+            example is out of scope for this lesson; however, we're confident you'll
+            have no trouble transforming the experience of a page with transitions.
+          </p>
+          <p>
+            When you mouse over the button in the browser, you'll notice it instantly
+            changes. Let's fix this so that the change is animated.
+          </p>
+          <p>
+            Make a new CSS ruleset in style.css to target all elements within the
+            button. There are three types of elements to account for,
+            <span>, <div>, and <i>:
+          </p>
+            <code>
+              .button span,
+              .button div,
+              .button i {
+
+              }
+            </code>
+          </div>
+      </li>
+      <li>
+        Within the new ruleset, add a shorthand transition declaration to transition the
+        width of all elements. Set the property to be transitioned to width, the
+        duration to 750ms, the timing function to ease-in, and the delay to 200ms.
+      </li>
+      <li>
+        <div>
+          <p>
+            That looks nicer except that the “DOWNLOAD” text disappears instantly.
+            Let's animate that in tandem.
+          </p>
+          <p>Add a comma and another transition value for the left property.</p>
+          <p>
+            Make the duration 500ms, the timing function ease-out, and the delay 450ms.
+          </p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <p>There’s one more instantaneous change to smooth out: the icon size.</p>
+          <p>
+            Add another transition to the chain for font-size. Make the duration 950ms
+            and the timing function linear. Since there is no delay on this transition,
+            leave off the last delay value.
+          </p>
+        </div>
+      </li>
+    </ol>
+  </body>
+</html>

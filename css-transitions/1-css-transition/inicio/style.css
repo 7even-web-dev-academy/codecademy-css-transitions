@@ -1,0 +1,23 @@
+a {
+  display: block;
+  width: 300px;
+  padding: 31px 5px;
+  border-radius: 5px;
+  margin: 20% auto;
+  background-color: orange;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 32px;
+  color: mintcream;
+  /*
+  add a declaration below to transition the background-color property
+  over a duration of two seconds. It should look like this:
+
+  transition-property: background-color;
+  transition-duration: 2s;
+  */
+}
+
+a:hover {
+  background-color: limegreen;
+}

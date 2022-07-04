@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delay</title>
+  </head>
+  <body>
+    <h1>Delay</h1>
+    <p>
+      Our last transition property is <code>transition-delay</code>. Much like
+      duration, its value is an amount of time. Delay specifies the time to wait
+      before starting the transition. As with the duration property, the default
+      value for <code>transition-delay</code> is 0s, which means no delay.
+    </p>
+    <pre>
+    <code>
+      transition-property: width;
+      transition-duration: 750ms;
+      transition-delay: 250ms;
+    </code>
+  </pre>
+    <p>
+      In the example above, a change in the width of the element will start
+      after a quarter of a second, and it will animate over three quarters of a
+      second.
+    </p>
+    <h2>Instructions</h2>
+    <ol>
+      <li>
+        <div>
+          <p>
+            Right now the gazelle immediately begins the transition to the new
+            state when the mouse hovers over it. Let's add a delay to make the
+            game a little more interesting.
+          </p>
+          <p>In the .game .gazelle ruleset, add a delay of 400ms.</p>
+        </div>
+      </li>
+    </ol>
+  </body>
+</html>

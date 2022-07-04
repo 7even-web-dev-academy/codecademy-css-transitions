@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Duration</title>
+  </head>
+  <body>
+    <div>
+      <h1>Duration</h1>
+      <div>
+        <p>
+          To create a simple transition in CSS, we must specify two of the four
+          aspects:
+        </p>
+        <ol>
+          <li>
+            The property that we want to transition.
+          </li>
+          <li>
+            The duration of the transition.
+          </li>
+        </ol>
+        <pre>
+          <code>
+            a {
+              transition-property: color;
+              transition-duration: 1s;
+            }
+          </code>
+        </pre>
+        <p>
+          In the example above,
+          <code>transition-property</code>
+          declares which CSS property we will be transitioning, the text color.
+          The second property,
+          <code>transition-duration</code>, declares how long the transition
+          will take — one second.
+        </p>
+        <p>
+          Many properties' state changes can be transitioned. The type of
+          transition depends on the property you choose. For a complete list of
+          all animated properties, see
+          <a
+            target="_blank"
+            rel="noopener"
+            href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties"
+            >this resource</a
+          >.
+        </p>
+        <p>Different properties transition in different ways, for example:</p>
+        <ul>
+          <li>
+            Color values, like
+            <code>color</code> and <code>background-color</code>, will blend to
+            a new color.
+          </li>
+          <li>
+            Length values like
+            <code>font-size</code>, <code>width</code>, and
+            <code>height</code> will grow or shrink.
+          </li>
+        </ul>
+        <p>
+          Duration is specified in seconds or milliseconds, such as
+          <code>3s</code>, <code>0.75s</code>, <code>500ms</code>. The default
+          value is <code>0s</code>, or instantaneous, as if there is no
+          transition.
+        </p>
+        <p>
+          When choosing a duration, think about how long actions take in real
+          life. For example, a human eye blink takes around 400ms. People might
+          expect the animation of clicking a button to be as sudden as a blink.
+        </p>
+      </div>
+      <ol>
+        <li>
+          <div>
+            <p>The <code>background-color</code> transition we implemented in the last exercise is a little slow. The user may move their mouse away before they notice the color changing!</p>
+            <p>Change the duration to 750 milliseconds.</p>
+            <p>Ultimately, it's up to you how long your animation takes; there is no right or wrong value. Experiment and have fun!</p>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </body>
+</html>

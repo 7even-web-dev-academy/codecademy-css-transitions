@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Timing Function</title>
+</head>
+<body>
+  <h1>
+    Timing Function
+  </h1>
+  <p>
+    The next transition property is transition-timing-function. The timing function describes the pace of the transition.
+  </p>
+  <p>
+    The default value is ease, which starts the transition slowly, speeds up in the middle, and slows down again at the end.
+  </p>
+  <p>
+    Other valid values include:
+  </p>
+  <ul>
+    <li>
+      ease-in — starts slow, accelerates quickly, stops abruptly
+    </li>
+      ease-out — begins abruptly, slows down, and ends slowly
+    </li>
+    <li>
+      ease-in-out — starts slow, gets fast in the middle, and ends slowly
+    </li>
+    <li>
+      linear — constant speed throughout
+    </li>
+  </ul>
+  <pre>
+    <code>
+      transition-property: color;
+      transition-duration: 1s;
+      transition-timing-function: ease-out;
+    </code>
+  </pre>
+  <p>
+    In the example above, the text color will be animated over one second. The timing function is ease-out which means it will begin abruptly and slow down as it ends.
+  </p>
+  <p>
+    If you're interested in learning more about timing functions or seeing a full list of the possible values, we recommend this resource from the Mozilla Developer Network.
+  </p>
+  <h2>Instructions</h2>
+  <ol>
+    <li>
+      <div>
+        <p>Let's use the <code>transition-timing-function</code> property in a game! Find the gazelle in the picture to your right and move your mouse over it. Hint: It's under a zebra's head.</p>
+        <p>Add transition-timing-function as a property to the <code> .game .gazelle </code> ruleset with the value linear.</p>
+        <p>Hover your mouse over the gazelle to observe the difference in motion. If you can't tell the difference, you can change the <code>transition-duration</code> value to be longer.</p>
+      </div>
+    </li>
+  </ol>
+</body>
+</html>
